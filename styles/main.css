@@ -1,0 +1,45 @@
+.container{
+    margin:0px auto;
+    width:1200px;
+    height:600px;
+    border:1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.hexagon{
+    width:800px;
+    height:400px;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    border:2px solid rgb(111, 9, 127);
+}
+.hexagon::before,.hexagon::after{
+    content:"`";
+    font-size: 4em;
+    color:brown;
+}
+.content::before, .content::after{
+    content:"`";
+    width:40px;
+    height:40px;
+    border-radius: 30%;
+    background-color: blueviolet;
+    font-size:5em;
+    color:blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    width:200px;
+    height:50px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
